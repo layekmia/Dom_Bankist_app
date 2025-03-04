@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Bankist application</title>
+    <link rel="stylesheet" href="output/tailwind.css">
+</head>
+<body class="bg-[#f3f3f3] font-poppins">
+    <header class="header px-8 h-screen ">
+        <nav class="nav px-14 flex items-center justify-between h-[90px]">
+            <!-- logo -->
+            <div>
+                <img id="logo" class="h-11 cursor-pointer" src="./assets/logo.png" alt="">
+            </div>
+
+            <ul id="nav__links" class="flex items-center gap-8">
+                <li>
+                    <a class="nav__link text-lg text-[#444444]" href="#section--1">Feature</a>
+                </li>
+                <li>
+                    <a class="nav__link text-lg text-[#444444]" href="#section--2">operations</a>
+                </li>
+                <li>
+                    <a class="nav__link text-lg text-[#444444]" href="#section--3">Testimonials</a>
+                </li>
+                <li>
+                    <a class="nav__link btn-priamry  show-modal-btn text-lg text-[#444444]" href="#">Open account</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hero section -->
+        <section class="max-w-[1190px] mx-auto grid grid-cols-[3fr_2fr] items-center">
+            <!-- content -->
+            <div class="flex flex-col gap-8 items-start mt-16">
+                <h1 class="text-[55px] text-lightDark font-bold leading-[1.4] ">
+                    When<span class="ml-3 highlight relative">banking</span> meets <br>
+                    <span class="highlight">minimalist</span>
+                </h1>
+                <h4 class="text-2xl text-lightDark">A simpler banking experience for a simpler life.
+                </h4>
+                <button id="learn-more" class="btn-text">Learn more ↓</button>
+            </div>
+            <!-- image -->
+             <div>
+                <img src="./assets/hero.png" alt="">
+             </div>
+        </section>
+    </header>
+
+    <main>
+        <!-- features section -->   
+        <section id="section--1" class="section">
+            <div class="section-title">
+                <h2 class="section-description">FEATURES</h2>
+                <h3 class="section-header">Everything you need in a modern bank and more.</h3>
+            </div>
+
+            <div class="features max-w-5xl mx-auto grid grid-cols-2 gap-10">
+                    <div>
+                        <img
+                          class="w-full lazy-img"
+                          src="./assets/digital-lazy.jpg"
+                          data-src="./assets/digital.jpg"
+                          alt="monito imag"
+                          >
+                    </div>
+
+                    <div class="self-center justify-self-center w-[70%]">
+                        <div class="w-14 h-14 rounded-full bg-primary mb-5"></div>
+                        <h5 class="mb-2.5 text-xl text-lightDark font-semibold">100% digital bank</h5>
+                        <p class="font-thin text-base text-[#666] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+                    </div>
+
+                    
+
+                    <div class="self-center justify-self-center w-[70%]">
+                        <div class="w-14 h-14 rounded-full bg-primary mb-5"></div>
+                        <h5 class="mb-2.5 text-xl text-lightDark font-semibold">100% digital bank</h5>
+                        <p class="font-thin text-base text-[#666] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+                    </div>
+
+                    <div>
+                        <img 
+                        class="w-full lazy-img" 
+                        src="./assets/grow-lazy.jpg" 
+                        data-src="./assets/grow.jpg" 
+                        alt=""
+                        >
+                    </div>
+
+                    <div>
+                        <img 
+                        class="w-full lazy-img" 
+                        src="./assets/card-lazy.jpg" 
+                        data-src="./assets/card.jpg"
+                        alt="">
+                    </div>
+
+                    <div class="self-center justify-self-center w-[70%]">
+                        <div class="w-14 h-14 rounded-full bg-primary mb-5"></div>
+                        <h5 class="mb-2.5 text-xl text-lightDark font-semibold">100% digital bank</h5>
+                        <p class="font-thin text-base text-[#666] leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde alias sint quos? Accusantium a fugiat porro reiciendis saepe quibusdam debitis ducimus.</p>
+                    </div>
+            </div>
+        </section>
+
+        <!-- operation components section  -->
+        <section id="section--2" class="section">
+            <div class="section-title">
+            <h2 class="section-description">operation</h2>
+            <h3 class="section-header">Everything as simple as possible, but no simpler.</h3>
+            </div>
+            <div class="max-w-[1000px] mx-auto bg-white">
+                <div id="tabs-container" class="text-center -translate-y-1/2">
+                    <button class="tab-btn bg-secondary hover:bg-secondary-darker mr-6 tab-btn-active" data-tab="1"><span>01</span> Instant Transfer</button>
+                    <button class="tab-btn bg-primary hover:bg-primary-darker mr-6" data-tab="2"><span>01</span> Instant Transfer</button>
+                    <button class="tab-btn bg-tertiary hover:bg-tertiary-darker" data-tab="3"><span>01</span> Instant Transfer</button>
+                </div>
+
+                <!-- tab content -->
+                <div id="tab-content-container">
+                    <div id="tab-content-1" class="operation-content operation-content-active px-[70px] pt-[25px] pb-[65px]">
+                        <div class="circle"></div>
+                        <h5 class="tab-header">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div id="tab-content-2" class="operation-content  px-[70px] pt-[25px] pb-[65px]">
+                        <div class="circle bg-primary-opacity"></div>
+                        <h5 class="tab-header">Buy a home or make your dreams come true, with instant loans</h5>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+
+                    <div id="tab-content-3" class="operation-content px-[70px] pt-[25px] pb-[65px]">
+                        <div class="circle bg-tertiary-opacity"></div>
+                        <h5 class="tab-header">Tranfser money to anyone, instantly! No fees, no BS.</h5>
+                        <p class="tab-description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- testimonial section -->
+        <section id="section--3" class="section">
+            <div class="section-title">
+                <h2 class="section-description">Not sure yet?</h2>
+                <h3 class="section-header">Millions of Bankists are already making their lifes simpler.</h3>
+            </div>
+
+            <div id="slider" class="max-w-5xl mx-auto relative h-[400px] overflow-hidden">
+
+                <div id="slider-1" class="slide absolute top-0 flex items-center justify-center h-[400px] ">
+                   <div class="w-[65%] testimoinal relative">
+                        <h2 class="text-2xl mb-4 text-lightDark">Best financial decision ever!</h2>
+                        <blockquote class="text-[#666] text-[17px] leading-8 mb-[35px]">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.
+                        </blockquote>
+
+                        <div class="flex items-center gap-4 ml-8">
+                            <img class="w-[65px] h-[65px] rounded-full" src="./assets/user-1.jpg" alt="">
+                            <div>
+                                <h3 class="text-[17px] text-lightDark">Aarav Lynn</h3>
+                                <span class="text-base text-[#666]">San Francisco, USA</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div id="slider-1" class="slide absolute top-0 flex items-center justify-center h-[400px] ">
+                   <div class="w-[65%] testimoinal relative">
+                        <h2 class="text-2xl mb-4 text-lightDark">The last step to becoming a complete minimalist</h2>
+                        <blockquote class="text-[#666] text-[17px] leading-8 mb-[35px]">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.
+                        </blockquote>
+
+                        <div class="flex items-center gap-4 ml-8">
+                            <img class="w-[65px] h-[65px] rounded-full" src="./assets/user-2.jpg" alt="">
+                            <div>
+                                <h3 class="text-[17px] text-lightDark">Aarav Lynn</h3>
+                                <span class="text-base text-[#666]">San Francisco, USA</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+                <div id="slider-1" class="slide absolute top-0 flex items-center justify-center h-[400px]">
+                   <div class="w-[65%] testimoinal relative">
+                        <h2 class="text-2xl mb-4 text-lightDark">Finally free from old-school banks!</h2>
+                        <blockquote class="text-[#666] text-[17px] leading-8 mb-[35px]">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium quas quisquam non? Quas voluptate nulla minima deleniti optio ullam nesciunt, numquam corporis et asperiores laboriosam sunt, praesentium suscipit blanditiis. Necessitatibus id alias reiciendis, perferendis facere pariatur dolore veniam autem esse non voluptatem saepe provident nihil molestiae.
+                        </blockquote>
+
+                        <div class="flex items-center gap-4 ml-8">
+                            <img class="w-[65px] h-[65px] rounded-full" src="./assets/user-3.jpg" alt="">
+                            <div>
+                                <h3 class="text-[17px] text-lightDark">Aarav Lynn</h3>
+                                <span class="text-base text-[#666]">San Francisco, USA</span>
+                            </div>
+                        </div>
+                   </div>
+                </div>
+
+                <button id="leftBtn" class="w-14 h-14 flex items-center justify-center rounded-full bg-[#fffffff3] text-3xl absolute left-0 top-1/2 -translate-y-1/2">←</button>
+                <button id="rightBtn" class="w-14 h-14 flex items-center justify-center rounded-full bg-[#fffffff3] text-3xl absolute right-0 top-1/2 -translate-y-1/2">→</button>
+
+                <div class="dots-container flex absolute left-1/2 bottom-0"></div>
+            </div>
+
+        </section>
+
+        <!-- * The best day section -->
+        <section class="section px-8 py-[100px] bg-[#37383d] text-center">
+            <div class="section-title">
+                <h3 class="section-header text-white">
+                    The best day to join Bankist was one year ago. The second best is today!
+                </h3>
+            </div>
+            <button class="btn-priamry py-5 px-12 show-modal-btn text-xl mt-16">Open Your free account today!</button>
+        </section>
+
+        <!-- * signup modal window -->
+        <div id="modal" class="p-[60px] bg-[#f3f3f3] fixed left-1/2 top-1/2 translate-x-[-50%] translate-y-[-50%] z-[1000]  w-[600px] disappear transition-all duration-500">
+            <button id="closeBtn" class="absolute top-1 right-5 text-[40px] text-lightDark">×</button>
+
+            <h2 class="text-lightDark text-3xl mb-11 font-semibold leading-[1.5]">Open your Bank account <br>
+                in just <span class="highlight ">5 minutes</span></h2>
+
+            <form action="#" class="grid grid-cols-[1fr_2fr] mx-8 gap-6 items-center">
+                    <label for="fname" class="text-lg text-lightDark">First Name</label>
+                    <input type="text" class="py-2.5 px-4 border rounded-md"> 
+
+                    <label for="fname" class="text-lg text-lightDark">Last Name</label>
+                    <input type="text" class="py-2.5 px-4 border rounded-md"> 
+
+                    <label for="fname" class="text-lg text-lightDark">Email Address</label>
+                    <input type="email"  class="py-2.5 px-4 border rounded-md">
+
+                <button class="btn-priamry col-span-2 justify-self-center mt-2.5 text-black">Next step →</button>
+            </form>
+        </div>
+        <div id="overlay" class="fixed inset-0 w-full h-full bg-[rgb(0,0,0,0.5)] backdrop-blur-sm z-10  disappear transition-all duration-500"></div>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="px-8 py-[100px] bg-[#37383d] border-t border-lightDark">
+        <ul class="flex items-center justify-center gap-10 mb-12">
+            <li><a class="text-base text-[#eeeeee]" href="#">About</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Pricing</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Terms of use</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Privacy Policy</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Carres</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Blog</a></li>
+            <li><a class="text-base text-[#eeeeee]" href="#">Contact Us</a></li>
+        </ul>
+        <img class="w-[50px] mx-auto block mb-12" src="./assets/icon.png" alt="">
+        <p class="text-xs text-[#aaa] text-center">
+            © Copyright by <span class="text-white">jonas Schmedtman</span> use for learning or your portfolio. Dont use to teach. Dont claim as your own product
+        </p>
+
+    </footer>
+    <script src="./src/main.js"></script>
+</body>
+</html>
